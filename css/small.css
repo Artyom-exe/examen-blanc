@@ -3,7 +3,7 @@
 }
 
 .col-sm-3 {
-  grid-column: span;
+  grid-column: span 3;
 }
 
 .hidden {
