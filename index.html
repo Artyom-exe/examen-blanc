@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Déclaration du type de document -->
+<html lang="en"> <!-- Langue de la page -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Encodage des caractères -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Meta viewport pour le responsive -->
+  <title>Document</title> <!-- Titre de la page -->
+  <link rel="stylesheet" href="reset.css" /> <!-- Réinitialisation des styles -->
+  <link href="css/large.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Styles pour les écrans larges -->
+  <link href="css/medium.css" rel="stylesheet" media="screen and (max-width:1024px)" />
+  <!-- Styles pour les écrans moyens -->
+  <link href="css/small.css" rel="stylesheet" media="screen and (max-width:660px)" />
+  <!-- Styles pour les petits écrans -->
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <!-- Lien vers la feuille de style pour l'impression -->
+</head>
+
+<body>
+  <div class="container"> <!-- Conteneur principal -->
+    <nav>
+      <ul class="wrapper"> <!-- Liste de navigation -->
+        <li class="col-3 col-md-2 col-sm-3"><a href="#featured">Featured</a></li> <!-- Liens de navigation -->
+        <li class="col-3 col-md-2 col-sm-3"><a href="#latest">Latest News</a></li>
+        <li class="col-3 col-md-2 col-sm-3"><a href="#about">About</a></li>
+        <li class="col-3 col-md-2 col-sm-3"><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="featured"> <!-- Section en vedette -->
+        <h1>Featured</h1> <!-- Titre de la section -->
+        <div class="wrapper"> <!-- Conteneur pour les articles -->
+          <article class="col-8 col-md-12 col-sm-12"> <!-- Article principal -->
+            <figure><img src="/images/balloon.jpg" alt="" /></figure> <!-- Image en vedette -->
+          </article>
+          <article class="wrapper-md col-4 col-md-12 hidden"> <!-- Articles secondaires masqués -->
+            <figure class="col-md-4"><img src="/images/book.jpg" alt="" /></figure>
+            <figure class="col-md-4"><img src="/images/eat.jpg" alt="" /></figure>
+            <figure class="col-md-4"><img src="/images/hero.jpg" alt="" /></figure>
+          </article>
+        </div>
+      </section>
+      <section> <!-- Section pour les dernières nouvelles -->
+        <div class="wrapper">
+          <article id="latest" class="col-12"> <!-- Article pour les dernières nouvelles -->
+            <h1>Latest News</h1> <!-- Titre de la section -->
+          </article>
+        </div>
+      </section>
+      <section> <!-- Section à propos et localisation -->
+        <div class="wrapper">
+          <article id="about" class="col-7 col-md-12 col-sm-12"> <!-- Article "À propos" -->
+            <p>
+            <h1>About</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            exercitationem natus, dicta, sint error consequatur nam facilis
+            atque sapiente voluptatem soluta perspiciatis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum numquam consectetur, culpa molestiae nam velit laboriosam temporibus tenetur fuga inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a quas odio praesentium quisquam blanditiis doloremque nam beatae maxime tempore. Consequatur voluptatibus explicabo labore aperiam quos! Soluta voluptatem laboriosam excepturi?
+            </p>
+          </article>
+          <article id="location" class="col-5 col-md-12 col-sm-12"> <!-- Article "Localisation" -->
+            <p>
+            <h1>Location</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            exercitationem natus, dicta, sint error consequatur nam facilis
+            atque sapiente voluptatem soluta perspiciatis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nesciunt sint, autem explicabo labore aspernatur facilis, libero quae velit hic quo necessitatibus dolorem omnis suscipit dolor, consequuntur aliquam dolores laudantium.
+
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>copyright</p> <!-- Pied de page -->
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+}
+
+    /* Masquer certains éléments non pertinents pour l'impression */
+    img, nav{
+        display: none;
+    }

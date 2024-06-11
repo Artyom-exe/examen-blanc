@@ -1,0 +1,141 @@
+/* Importation de la police Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Styles généraux */
+body {
+  background-color: #FFF;
+  padding: 1em;
+  text-align: justify;
+}
+
+/* Conteneur principal */
+.container {
+  position: relative;
+  top: 50px;
+  font-family: 'manrope';
+}
+
+/* Grille */
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+/* Colonnes */
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-12,
+.col-6,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+  position: relative;
+}
+
+/* Styles pour les figures */
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+/* Styles pour les images dans les figures */
+figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* Styles pour les articles */
+article {
+  background-color: white;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2em;
+  padding-left: 1em;
+  color: #333333;
+  background: #FFFFFF;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Effet de survol */
+nav ul li {
+  transition: 0.5s;
+}
+
+nav ul li:hover {
+  transform: scale(0.9);
+}
+
+/* Animation pour le titre de l'article le plus récent */
+article#latest>h1 {
+  animation: breathe 2s infinite;
+}
+
+/* Animation "breathe" */
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
